@@ -1,6 +1,7 @@
 import cv2
 import streamlit as st
 from datetime import datetime
+from pathlib import Path
 
 # Function to detect face using Haar cascades
 def detect_faces(frame, face_cascade):
