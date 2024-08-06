@@ -25,6 +25,11 @@ face_present = False
 # Video capture from webcam
 cap = cv2.VideoCapture(0)
 
+if not cap.isOpened():
+    print("Error: Camera not accessible")
+else:
+    print("Camera is working")
+
 while run:
     ret, frame = cap.read()
     if not ret:
