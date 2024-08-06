@@ -23,7 +23,7 @@ disappearance_time = None
 face_present = False
 
 # Video capture from webcam
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(2)
 
 if not cap.isOpened():
     print("Error: Camera not accessible")
